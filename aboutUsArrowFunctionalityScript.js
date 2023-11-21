@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var arrow2 = document.querySelector('.arrow2');
 
     var components = [aboutUsSubText, mission1Container, whyUsContainer, contactUsContainer, mission2Container];
-    var currentIndex = 0; // Start from the first component
+    var currentIndex = 0; 
 
-    // Function to hide all components
     function hideAllComponents() {
         components.forEach(function (component) {
             component.classList.add('hidden');
         });
     }
-
-    hideAllComponents(); // Hide all components initially
+    
+    hideAllComponents(); 
+    aboutUsSubText.classList.add('visible');
 
     function toggleVisibility(element) {
         element.classList.toggle('hidden');
