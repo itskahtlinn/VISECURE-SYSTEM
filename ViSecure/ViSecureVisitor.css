@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #2C2C2C;
+    border-bottom: #fff 2.5px solid;
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    padding: 4px 2%;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+}
+
+header .AboutUs{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.icon img {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+body{
+    background-image: url('/VISECURE-SYSTEM/ViSecure/img/Visecure2.png');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+
+.GreetingForm{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid;
+
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20px;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20px;
+    }
+
+    .btnAnswerForm{
+        width: 30%;
+        padding: 10px 30px;
+        color: white;
+        font-weight: 700;
+        background-color: #007AFF;
+        border: 1px solid #007AFF;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+

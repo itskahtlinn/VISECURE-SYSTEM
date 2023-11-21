@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #2C2C2C;
+    border-bottom: #fff 2.5px solid;
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    padding: 4px 2%;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+}
+
+header .AboutUs, .Dashboard, .Visitor{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .AboutUs{
+    margin-right: 15%;
+}
+
+header .Dashboard{
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+header .Visitor{
+    margin-right: 10%;
+}
+
+.logo {
+    color: #fff;
+    font-size: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.icon img {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+body{
+    background-color: white;
+}
+
+h1{
+    margin-top: 80px;
+    color: black;
+    margin-left: 80px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.flex-container {
+    border: 2px solid;
+    display: flex;
+    flex-direction: row; 
+    height: 600px; 
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.small-box {
+    width: 440px;
+    height: 360px;
+    margin-bottom: 10px; 
+    background-color: white; 
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
+}
+
+.large-box {
+    flex: 1; 
+    margin-left: 5px; 
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
+}
