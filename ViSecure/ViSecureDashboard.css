@@ -65,35 +65,38 @@ h1{
 }
 
 .flex-container {
-    border: 2px solid;
     display: flex;
-    flex-direction: row; 
-    height: 600px; 
+    flex-direction: row;
+    height: auto; 
 }
 
 .box-container {
     display: flex;
     flex-direction: column; 
     flex: 1; 
+    align-items: center;
 }
 
 .small-box {
-    width: 440px;
-    height: 360px;
+    width: 400px;
+    height: 300px;
     margin-bottom: 10px; 
+    margin-top: 20px;
+    margin-left: 60px;
     background-color: white; 
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
 }
 
 .large-box {
-    flex: 1; 
-    margin-left: 5px; 
+    width: 950px;
+    height: 630px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 5%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid black;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48);
 }
