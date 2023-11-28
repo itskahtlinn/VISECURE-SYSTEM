@@ -29,6 +29,13 @@ header .AboutUs{
     margin-left: auto;
 }
 
+header .partnerCompany{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    margin-left: auto;
+}
 
 .logo {
     color: #fff;
