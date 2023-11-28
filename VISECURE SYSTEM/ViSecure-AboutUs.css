@@ -12,7 +12,7 @@ header {
     font-family: 'Poppins', sans-serif;
 }
 
- header .AboutUs{
+header .AboutUs{
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -20,6 +20,13 @@ header {
     margin-left: auto;
 }
 
+header .partnerCompany{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    margin-left: auto;
+}
 
 .logo {
     color: #fff;
