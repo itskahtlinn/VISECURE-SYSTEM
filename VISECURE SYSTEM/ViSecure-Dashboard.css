@@ -72,53 +72,70 @@ h1{
     height: 100vh;
     overflow-x: auto; 
     display: flex;
-
+    flex-direction: column;
 }
 
 .small-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.TodayVisits, .WeeklyVisits, .TotalVisits {
+    width: 25vw;
+    height: 30vh;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48); 
+}
+
+.TodayVisits{
+    margin-left: 125px;
+}
+
+.TotalVisits{
+    margin-right: 125px;
+}
+
+.DashboardInsights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Graphs{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 50px;
+    margin-top: 50px;
+    margin-left: 115px;
 }
-.small-box-top {
-    min-width: 25vw;
-    height: 43vh;
+
+.WeeklyVisitsGraph, .MonthlyVisitsGraph{
+    width: 45vw;
+    height: 40vh;
     padding: 20px;
     margin: 10px;
+    margin-bottom: 30px;
     background-color: white;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48); 
 }
 
-.small-box-bot {
-    min-width: 25vw;
-    height: 52vh;
+.EmployeeList{
+    width: 40vw;
+    height: 50vh;
     padding: 20px;
     margin: 10px;
     background-color: white;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48); 
+    margin-right: 125px;
 }
 
-.large-box-1 {
-    min-width: 40vw; 
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48); 
-}
-
-.large-box-2 {
-    min-width: 50vw;
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.48); 
-}

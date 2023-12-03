@@ -53,59 +53,60 @@
                 </p>
             </section>
 
-            <section class ="inverse full-bleed WhatWeOffer">
-                <h1>What We Offer</h1>
-                <div class="WhatWeOfferContainer">
-                    <input type="radio" name="slider" id="convenience" >
-                    <input type="radio" name="slider" id="security" >
-                    <input type="radio" name="slider" id="insights" >
-                    <input type="radio" name="slider" id="customization" >
-                    <input type="radio" name="slider" id="user-friendly" >
-
-                    <nav>
-                        <label for="convenience" class="convenience">Convenience</label>
-                        <label for="security" class="security">Security</label>
-                        <label for="insights" class="insights">Insights</label>
-                        <label for="customization" class="customization">Customize</label>
-                        <label for="user-friendly" class="user-friendly">User-Friendly</label>
-                        
-                        <div class="slider"></div>
-                    </nav>
-                    <section class="WhatWeOfferContent">
-                        <div class="content content-1">
-                            <div class="title">Simplified Registration:</div>
-                            <p>ViSecure simplifies the visitor registration process. 
-                                Visitors answer a digital form before entering your premises, 
-                                reducing wait times and encouraging user interactions.</p>
-                        </div>
-
-                        <div class="content content-2">
-                            <div class="title">Enhanced Security:</div>
-                            <p>By moving away from traditional paper records, ViSecure ensures the protection of 
-                                sensitive visitor information with top-tier security features, building trust in user interactions.</p>
-                        </div>
-
-                        <div class="content content-3">
-                            <div class="title">Real-time Insights:</div>
-                            <p>Gain instant access to real-time visitor information and insights. 
-                                ViSecure provides data to make informed access control decisions, driven by user interactions. </p>
-                        </div>
-
-                        <div class="content content-4">
-                            <div class="title">Customization:</div>
-                            <p>Our system is flexible and can be customized to meet your specific needs. 
-                                Tailor the visitor registration form and process to encourage meaningful user interactions based on your requirements.</p>
-                        </div>
-
-                        <div class="content content-5">
-                            <div class="title">User-Friendly:</div>
-                            <p> ViSecure is designed with a user-friendly interface, 
-                                promoting seamless and positive user interactions for both your staff and visitors.</p>
-                        </div>
-                    </section>
+        <section class ="inverse full-bleed WhatWeOffer">
+            <div class="slider-container">
+                <div class="slider-content">
+                    <div class="slide">
+                        <h3>What We Offer</h3>
+                        <p class="Header">Simplified Registration</p>
+                        <p>ViSecure simplifies the visitor registration process. Visitors
+                            answer a digital form before entering your premises,
+                            reducing wait times and encouraging user interactions.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>What We Offer</h3>
+                        <p class="Header">Enhanced Security</p>
+                        <p>By moving away from traditional paper records, ViSecure
+                            ensures the protection of sensitive visitor information with
+                            top-tier security feature, building trust in user interactions.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>What We Offer</h3>            
+                        <p class="Header">Real-Time Insights</p>
+                        <p>Gain instant access to real-time visitor information and
+                            insights. ViSecure provides data to make informed access
+                            control decisions, driven by user interactions.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>What We Offer</h3>
+                        <p class="Header">Customization</p>
+                        <p>Our system is flexible and can be customized to meet your
+                            specific needs. Tailor the visitor registration form and
+                            process to encourage meaningful user interactions based
+                            on your requirements.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>What We Offer</h3>
+                        <p class="Header">User-Friendly Interface</p>
+                        <p>ViSecure is designed with a user-friendly interface,
+                            promoting seamless and positive user interactions for both
+                            your staff and visitors.</p>
+                    </div>
                 </div>
-            </section>
-        </div>
+                <div class="slider-nav">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <label for="slide1"></label>
+                    <input type="radio" name="slider" id="slide2">
+                    <label for="slide2"></label>
+                    <input type="radio" name="slider" id="slide3">
+                    <label for="slide3"></label>
+                    <input type="radio" name="slider" id="slide4">
+                    <label for="slide4"></label>
+                    <input type="radio" name="slider" id="slide5">
+                    <label for="slide5"></label>
+                </div>
+            </div>
+        </section>
     </body>
     <footer class ="ContactUsContainer">
         <h2> Contact Us </h2>
@@ -120,4 +121,41 @@
             </div>
         </div>
     </footer>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const inputRadios = document.querySelectorAll('.slider-nav input');
+            const sliderContent = document.querySelector('.slider-content');
+
+                let currentIndex = 0;
+
+                inputRadios.forEach((radio, index) => {
+                    radio.addEventListener('change', function () {
+                        currentIndex = index;
+                        updateSliderPosition();
+                    });
+                });
+
+                function updateSliderPosition() {
+                    const translateValue = -currentIndex * 100 + '%';
+                    sliderContent.style.transform = 'translateX(' + translateValue + ')';
+                }
+
+                inputRadios[1].addEventListener('change', function () {
+                currentIndex = 1;
+                updateSliderPosition();
+                });
+
+                setInterval(function () {
+                    currentIndex = (currentIndex + 1) % inputRadios.length;
+                    if (currentIndex === 0) {
+                        sliderContent.style.transition = 'transform 0.5s ease-in';
+                        setTimeout(() => {
+                            sliderContent.style.transform = 'translateX(0)';
+                        }, 50);
+                    }
+                    inputRadios[currentIndex].checked = true;
+                    updateSliderPosition();
+                }, 3000);
+            });
+    </script>
 </html>
