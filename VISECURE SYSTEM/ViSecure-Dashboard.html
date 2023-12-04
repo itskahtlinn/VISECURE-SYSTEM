@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <!-- <header>
             <a href="#" class="icon">
                 <img src="img/visecure-icon.png">
             </a>
@@ -19,29 +19,43 @@
             <a href="#">
                 <img src="img/settings.png" class="btnSettings">
             </a>
-        </header>
-        <main>
-            <h1>Welcome to Dashboard!</h1>
-            <div class="flex-container">
-                <div class="box-container">
-                    <div class="small-box"></div> 
-                    <div class="small-box"></div> 
-            <div class="dashboard-container">
-                <div class="small-container">
-                    <div class="TodayVisits">
-
-                    </div>
-                    <div class="WeeklyVisits"></div>
-                    <div class="TotalVisits"></div>
+        </header> -->
+        <div class="Header">
+            <div class="SideNav">
+                <div class="CompanyLogo">
+                    <img src="img/visecure-icon.png" class="icon">
+                    <h3>ViSecure</h3>
                 </div>
-                <div class="DashboardInsights">
-                    <div class="Graphs">
-                        <div class="WeeklyVisitsGraph"></div>
-                        <div class="MonthlyVisitsGraph"></div>
+                <ul>
+                    <li><img src="img/search.png"><p>Search</p></li>
+                    <li><img src="img/dashboard.png"><p>Dashboard</p></li>
+                    <li><img src="img/reports.png"><p>Reports</p></li>
+                </ul>
+                <ul class="LogOut">
+                    <li><img src="img/logout.png"><p>Log Out</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="DashboardContent">
+            <div class="container">
+                <h1>Welcome to Dashboard!</h1>
+                <div class="flex-container">
+                    <div class="dashboard-container">
+                        <div class="small-container">
+                                <div class="TodayVisits"></div>
+                                <div class="WeeklyVisits"></div>
+                                <div class="TotalVisits"></div>
+                        </div>
+                        <div class="DashboardInsights">
+                            <div class="Graphs">
+                                <div class="WeeklyVisitsGraph"></div>
+                                <div class="MonthlyVisitsGraph"></div>
+                            </div>
+                            <div class="EmployeeList"></div>
+                        </div>
                     </div>
-                    <div class="EmployeeList"></div>
                 </div>
             </div>
-        </main>
+        </div>
     </body>
 </html>
